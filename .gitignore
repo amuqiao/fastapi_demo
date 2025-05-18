@@ -5,6 +5,10 @@ build/
 dist/
 wheels/
 *.egg-info
+# 屏蔽 coverage.py 生成的覆盖率数据文件
+.coverage  
+# 新增：屏蔽所有目录（含子目录）下的 macOS .DS_Store 文件
+**/.DS_Store  
 
 # Virtual environments
 .venv

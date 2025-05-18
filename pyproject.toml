@@ -8,3 +8,16 @@ dependencies = [
     "fastapi==0.115.12",
     "uvicorn==0.34.2",
 ]
+
+# 配置pip镜像源 - 手动添加
+[tool.uv]
+# 指定pip安装时的镜像源，加速依赖下载
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+extra-index-url = ["https://pypi.org/simple"]  # 添加官方源作为备用
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",  # 测试框架
+    "pytest-cov>=6.1.1",  # 代码覆盖率  
+    
+]

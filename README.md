@@ -1,4 +1,5 @@
 # 项目结构
+```
 fastapi_demo/
 ├── .gitignore          # Git忽略配置（Python虚拟环境、IDE缓存等）
 ├── .python-version     # 指定Python版本为3.12
@@ -24,6 +25,7 @@ fastapi_demo/
     ├── test_scripts/   # 脚本模块测试目录（待扩展）
     └── test_tools/     # 工具模块测试目录
         └── test_measure.py # `measure`装饰器测试用例
+```
 
 # 环境准备
 - 已安装Python 3.12（通过 .python-version 指定）
@@ -63,4 +65,3 @@ fastapi_demo/
   ```
     python scripts/run_cleaning.py
   ```   
-  
